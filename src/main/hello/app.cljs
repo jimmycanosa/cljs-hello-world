@@ -17,6 +17,11 @@
 (defn theme-toggle-label []
   [:label.switch-label {:for "theme-switch"}])
 
+(defn tonight []
+  [:<>
+   [:p (str " 🌟 " " 🛌 " " ❤ ")]
+   [:p (-> js/Date .now (format "EEEE"))]])
+
 (defn today []
   [:<>
    [:p (str " 🌅 " " 😴 " " ☕ ")]
@@ -28,8 +33,8 @@
     [:<>
      [:h1 (if dark? "Good Evening." "Good Morning.")]
      [:p {:data-tip "And this is ReactTooltip"} "Made with cool tools like Hiccup, Reagent and re-frame"]
-     (when light?
-       [today])]))
+     (if dark?
+       [tonight] [today])]))
 
 (defn page []
   [:div#page
