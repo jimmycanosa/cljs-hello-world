@@ -8,7 +8,7 @@ Example code using:
 * a third party React library (`react-tooltip`)
 * a third party JavaScript library (`date-fns`)
 
-Here is a clickable example [web page](https://davidvujic.github.io/cljs-hello-world/public/) based on the source code of this repo.
+Here is a clickable example [web page](https://jimmycanosa.github.io/cljs-hello-world/public/) based on the source code of this repo.
 
 ##### References
 Have a look at this [Blog post](https://davidvujic.blogspot.com/2021/01/simple-within-parentheses.html) 
