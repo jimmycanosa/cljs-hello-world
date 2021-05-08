@@ -32,7 +32,7 @@
         dark?  (<sub [:dark-theme?])]
     [:<>
      [:h1 (if dark? "Good Evening." "Good Morning.")]
-     [:p {:data-tip "And this is ReactTooltip"} "Made with cool tools like Hiccup, Reagent and re-frame"]
+     [:p {:data-tip "You found a secret! Hello, I'm Jimmy."} "Made with cool tools like Hiccup, Reagent and re-frame"]
      (if dark?
        [tonight] [today])]))
 
